@@ -5,7 +5,8 @@
   "main": "cases.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/comment.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,14 @@
     "chalk": "^5.4.0",
     "cheerio": "^1.0.0",
     "puppeteer": "^23.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/puppeteer": "^5.4.7",
+    "@types/vscode": "^1.96.0",
+    "typescript": "^5.7.2"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
